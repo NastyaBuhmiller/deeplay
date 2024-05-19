@@ -106,9 +106,6 @@ public class Animal {
         }return animal;
 
     }
-
-
-
     public static int getHowManyAnimals(){
         return allAnimal.size();
     }
