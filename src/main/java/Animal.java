@@ -50,20 +50,9 @@ public class Animal {
                 ", weight=" + weight +
                 '}';
     }
-    //public static ArrayList<Animal> getAllAnimal(){
-       // return new ArrayList<>(allAnimal.values());
-    //}
 
     public static ArrayList<Animal> getAllAnimal(String type,String height,String weight) throws FileNotFoundException{
         File animal_file = new File("src//main//java//org.example//Animal");
-//        List<Animal> listAllAnimal= new ArrayList<>();
-//       for (Animal animal : allAnimal.values()){
-//            if (animal.type == type){
-//                listAllAnimal.add(animal);
-//            }
-//        }
-//        return listAllAnimal;
-//    }
         ArrayList<Animal> animal = new ArrayList<>();
         if (animal_file.exists()) {
             Scanner s = new Scanner(animal_file);
@@ -113,11 +102,6 @@ public class Animal {
     public static int getHowManyAnimal(String type,String height, String weight) throws FileNotFoundException{
         return getAllAnimal(type,height,weight).size();
     }
-
-
-
-
-
 }
 
 
